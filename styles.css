@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(212, 199, 181);
+  font-family: 'Montserrat', sans-serif;
+}
+
+navbar ul {
+  background-color: black;
+}
+
+navbar ul li {
+  display: inline;
+}
+
+navbar ul li a {
+  display: inline;
+  color: white;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+h2 {
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-weight: 100;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.tourbillon {
+  display: block;
+  margin: 0 auto 2rem auto;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 100px;
+  margin: 0 100px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__item {
+  position: relative;
+  float: left;
+}
+
+.gallery__item--1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.gallery__item--2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.gallery__item--3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.gallery__item--4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.gallery__item--5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.gallery__item--6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+figcaption {
+  display: block;
+  float: left;
+  position: absolute;
+  top: 0;
+}
+
+.links {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin: 0 auto;
+  width: 25%;
+}
